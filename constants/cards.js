@@ -35,6 +35,8 @@ export const KING = 'KING';
 
 export const PIPS = [ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING];
 
+// export const PIPS_NO_ACE = PIPS.slice(1)
+
 export const RANKS = {
   [ACE]: 1,
   [TWO]: 2,
@@ -54,7 +56,8 @@ export const RANKS = {
 // Deck
 
 export const DECK = SUITS.map(suit => PIPS.map(pip => ({ suit, pip }))).reduce((acc, val) => acc.concat(val), []);
-
+// export const DECK_NO_ACES = SUITS.map(suit => PIPS_NO_ACE.map(pip => ({ suit, pip }))).reduce((acc, val) => acc.concat(val), []);
+// export const ACES = SUITS.map(suit => {return {suit, 'pip': ACE}})
 // Symbols
 
 export const SYMBOLS = {

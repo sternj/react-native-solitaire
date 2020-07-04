@@ -1,7 +1,8 @@
 import {
   RANKS,
   SUIT_COLOR,
-  SYMBOLS
+  SYMBOLS, 
+  DECK
 } from '../constants/cards';
 
 export const shuffle = (a) => {
@@ -22,3 +23,4 @@ export const shuffle = (a) => {
 export const symbol = (name) => SYMBOLS[name] || name;
 export const rank = (pip) => RANKS[pip] || -1;
 export const color = (suit) => SUIT_COLOR[suit];
+export const card = (idx) => DECK[idx]
